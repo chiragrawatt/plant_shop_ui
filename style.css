@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: bisque;
+}
+
+#outer {
+    display: flex;
+    flex-direction: column;
+    min-width: 70%;
+    min-height: 80%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0px 40px 0px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav, #subquote, button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px;
+}
+
+#company-name {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+    font-weight: bold;
+}
+
+#menu-icon {
+    display: none
+}
+
+#content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    max-width: 40%;
+}
+
+#image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#image-container img {
+    max-height: 350px;
+    width: auto;
+    /* height: 100%; */
+    /* object-fit: contain; */
+}
+
+#quote {
+    font-size: 40px;
+}
+
+#subquote {
+    font-size: 14px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+#shop-button {
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 10px;
+    width: 150px;
+    border: none;
+}
+
+footer {
+    display: flex;
+    /* margin-top: 20px; */
+    padding-bottom: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width: 700px) {
+    #outer {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #content-container {
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #menu-icon {
+        display: contents;
+    }
+
+    #subquote {
+        margin-top: 6px;
+    }
+
+    #shop-button {
+        margin-top: 10px;
+    }
+
+    #text-container {
+        max-width: 100%;
+    }
+
+    #image-container {
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+}
